@@ -1,186 +1,684 @@
 /* Seletor Universal */
-* {
-    margin: 0; /* Remove a margem padrão de todos os elementos */
-    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
-    box-sizing: border-box; /* Altera o modelo de caixa para incluir bordas e preenchimento no cálculo do tamanho do elemento */
-}
-
-/* TAG header */
-header {
-    background-color: #D3D3D3; /* Define a cor de fundo do cabeçalho como cinza claro */
-    display: flex; /* Utiliza o Flexbox para organizar os itens no cabeçalho */
-    flex-direction: row; /* Organiza os itens em uma linha (horizontalmente) */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    justify-content: space-around; /* Distribui os itens de maneira uniforme com espaço entre eles */
-    border-bottom: 3px solid #000000; /* Adiciona uma borda inferior preta de 3px */
-    padding-bottom: 10px; /* Adiciona um preenchimento de 10px na parte inferior do cabeçalho */
-}
-
-/* id logo-header */
-#logo-header {
-    width: 300px; /* Define a largura do logo para 300px */
-}
-
-/* id nav-header */
-#nav-header {
-    display: flex; /* Utiliza o Flexbox para organizar os itens de navegação */
-    flex-direction: row; /* Organiza os itens de navegação em uma linha (horizontalmente) */
-    align-items: center; /* Alinha os itens de navegação verticalmente no centro */
-    justify-content: space-between; /* Distribui os itens de navegação com espaço entre eles */
-    gap: 30px; /* Define um espaço de 30px entre os itens de navegação */
-}
-
-/* class item-nav */
-.item-nav {
-    display: flex; /* Utiliza o Flexbox para organizar os itens dentro de cada seção de navegação */
-    flex-direction: column; /* Organiza os itens verticalmente (em uma coluna) */
-    align-items: center; /* Alinha os itens de navegação horizontalmente no centro */
-    gap: 5px; /* Define um espaço de 5px entre os itens dentro de cada seção de navegação */
-}
-
-/* class icone-item-nav */
-.icone-item-nav {
-    font-size: 30px; /* Define o tamanho do ícone para 30px */
-}
-
-/* class link-item-nav */
-.link-item-nav {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #000000; /* Define a cor do texto do link como preto */
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto do link */
-}
-/* Importação da fonte "Poppins" do Google Fonts */
+/* Importacao da fonte "Poppins" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Importação das fontes "Orbitron" e "Poppins" do Google Fonts */
+
+/* Importacao das fontes "Orbitron" e "Poppins" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Definição de variáveis globais */
+
+/* Definicao de variaveis globais */
 :root {
-   --cor1: #ffffff; /* Define a variável "cor1" como branco */
-   --cor2: #000000; /* Define a variável "cor2" como preto */
-   --cor3: #dcdcdc; /* Define a variável "cor3" como cinza claro */
+    --cor1: #ffffff; /* Define a variavel "cor1" como branco */
+    --cor2: #000000; /* Define a variavel "cor2" como preto */
+    --cor3: #dcdcdc; /* Define a varivel "cor3" como cinza claro */
+    --cor-whatsapp: #25D366; /* Define a variavel "cor-whatsapp" o verde oficial */
 }
-/* Seletor Universal - Remove estilos padrão e define comportamento geral */
+
+/* Seletor Universal - Remove estilos padrao e define comportamento geral */
 * {
-   margin: 0; /* Remove todas as margens padrão */
-   padding: 0; /* Remove todos os preenchimentos padrão */
-   box-sizing: border-box; /* Faz com que a largura e altura incluam padding e borda */
-   font-family: "Poppins", sans-serif; /* Define a fonte padrão como "Poppins" */
-   font-weight: 100; /* Define o peso da fonte como 100 (mais fina) */
-   font-style: normal; /* Define o estilo da fonte como normal */
+    margin: 0; /* Remove todas as margens padrao */
+    padding: 0; /* Remove todos os preenchimentos padrao */
+    box-sizing: border-box; /* Faz com que a largura e altura incluam padding e borda */
+
+    font-family: "Poppins", sans-serif; /* Define a fonte padrao como "Poppins" */
+    font-weight: 100; /* Define o peso da fonte como 100 (mais fina) */
+    font-style: normal; /* Define o estilo da fonte como normal */
 }
+<section id="contato">
+<!-- Seção de formulário de contato -->
+
+<h2>Entre em contato</h2>
+<!-- Título da seção de contato -->
+
+<form action="">
+    <!-- Formulário de contato -->
+
+    <label for="nome">Nome</label>
+    <!-- Rótulo para o campo de nome -->
+    <input type="text" name="nome" id="nome">
+    <!-- Campo de entrada de texto para o nome -->
+
+    <label for="email">E-Mail</label>
+    <!-- Rótulo para o campo de e-mail -->
+    <input type="email" name="email" id="email">
+    <!-- Campo de entrada para o e-mail (o tipo "email" valida o formato de e-mail) -->
+
+    <label for="assunto">Assunto</label>
+    <!-- Rótulo para o campo de assunto -->
+    <input type="text" name="assunto" id="assunto">
+    <!-- Campo de entrada de texto para o assunto -->
+
+    <label for="mensagem">Mensagem</label>
+    <!-- Rótulo para o campo de mensagem -->
+    <textarea name="mensagem" id="mensagem"></textarea>
+    <!-- Área de texto para a mensagem -->
+
+    <input type="submit" value="Enviar">
+    <!-- Botão de envio do formulário -->
+</form>
+</section>
+/* Estilizacao do corpo da pagina */
 body {
    background-color: var(--cor1); /* Define a cor de fundo do corpo como branco */
 }
 
- /* Estilização do cabeçalho */
- header {
-    display: flex; /* Usa Flexbox para organização dos elementos */
-    flex-direction: row; /* Alinha os itens do cabeçalho em linha (horizontalmente) */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    justify-content: space-around; /* Distribui os itens igualmente no espaço disponível */
- }
- /* Estilização da navegação dentro do cabeçalho */
- #header-nav {
-    display: flex; /* Usa Flexbox */
-    flex-direction: row; /* Mantém os itens da navegação em linha */
-    align-items: center; /* Alinha os itens verticalmente */
-    justify-content: space-around; /* Distribui os itens uniformemente */
-    gap: 40px; /* Adiciona um espaço de 40px entre os itens */
- }
- /* Estilização do logotipo dentro do cabeçalho */
- header img {
-    width: 300px; /* Define a largura da imagem do logotipo como 300px */
- }
- /* Estilização dos links de navegação */
- .header-nav-a {
-    display: flex; /* Usa Flexbox */
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    align-items: center; /* Centraliza os itens */
-    gap: 10px; /* Adiciona um espaçamento de 10px entre os ícones e o texto */
-    color: var(--cor2); /* Define a cor do texto como preto */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    transition: all 1s ease; /* Adiciona uma transição suave de 1s */
+/* Estilizaco do cabecalho */
+header {
+   display: flex; /* Usa Flexbox para organizacao dos elementos */
+   flex-direction: row; /* Alinha os itens do cabecalho em linha (horizontalmente) */
+   align-items: center; /* Alinha os itens ao centro verticalmente */
+   justify-content: space-around; /* Distribui os itens igualmente no espaco disponavel */
+}
+
+/* Estilizacao da navegacao dentro do cabecalho */
+#header-nav {
+   display: flex; /* Usa Flexbox */
+   flex-direction: row; /* Mantem os itens da navegacao em linha */
+   align-items: center; /* Alinha os itens verticalmente */
+   justify-content: space-around; /* Distribui os itens uniformemente */
+   gap: 40px; /* Adiciona um espaco de 40px entre os itens */
+}
+
+/* Estilizacao do logotipo dentro do cabecalho */
+header img {
+   width: 300px; /* Define a largura da imagem do logotipo como 300px */
+}
+
+/* Estilizacao dos links de navegacao */
+.header-nav-a {
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   align-items: center; /* Centraliza os itens */
+   gap: 10px; /* Adiciona um espacamento de 10px entre os i­cones e o texto */
+   color: var(--cor2); /* Define a cor do texto como preto */
+   text-decoration: none; /* Remove o sublinhado dos links */
+   transition: all 1s ease; /* Adiciona uma transicao suave de 1s */
+}
+/* Efeito ao passar o mouse sobre os links de navegacao */
+.header-nav-a:hover {
+   scale: 1.2; /* Aumenta o tamanho do elemento em 20% ao passar o mouse */
+}
+
+/* Estilizacao dos i­cones da navegaco */
+.header-nav-a i {
+   font-size: 40px; /* Define o tamanho dos i­cones como 40px */
+}
+
+/* Estilizacao do texto dos links de navegacao */
+.header-nav-a span {
+   font-size: 24px; /* Define o tamanho da fonte como 24px */
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+}
+
+/* Estilizacao da sessao de apresentacao */
+#apresentacao {
+   display: flex; /* Usa Flexbox */
+   flex-direction: row; /* Organiza os elementos horizontalmente */
+   align-items: start; /* Alinha os elementos ao topo */
+   justify-content: space-between; /* Distribui os itens uniformemente */
+   margin-top: 60px; /* Adiciona um espacamento superior de 60px */
+   margin-left: 30px; /* Adiciona um espacamento a  esquerda de 30px */
+   margin-right: 30px; /* Adiciona um espacamento a  direita de 30px */
+
+   background-color: var(--cor2); /* Define o fundo da sessao como preto */
+   color: var(--cor1); /* Define a cor do texto como branco */
+}
+
+/* Estilizacao da imagem dentro da sessao de apresentacao */
+#apresentacao img {
+   width: 75%; /* Define a largura da imagem como 75% do container */
+   filter: grayscale(100%); /* Deixa a imagem em preto e branco */
+   transition: all 1s ease; /* Adiciona uma transicao suave de 1s */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+#apresentacao img:hover {
+   filter: grayscale(0%); /* Remove o efeito preto e branco */
+}
+/* Estilizacao do container de texto dentro da sessao de apresentacao */
+#apresentacao div {
+   width: 25%; /* Define a largura do bloco de texto como 25% do container */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   align-items: center; /* Centraliza os itens */
+   justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+/* Estilizacao do ti­tulo dentro da sessao de apresentacao */
+#apresentacao div h2 {
+   font-family: "Orbitron", sans-serif; /* Usa a fonte "Orbitron" */
+   font-optical-sizing: auto; /* Ajusta automaticamente o tamanho etico da fonte */
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+   font-style: normal; /* Define o estilo da fonte como normal */
+   font-size: 50px; /* Define o tamanho da fonte como 50px */
+   width: 100%; /* Define a largura como total */
+   text-align: center; /* Centraliza o texto */
+   margin: 10px 0 10px 0; /* Adiciona espacamento superior e inferior */
+}
+
+/* Estilizacao do subti­tulo dentro da secao de apresentacao */
+#apresentacao div h3 {
+   width: 100%; /* Define a largura como total */
+   text-align: center; /* Centraliza o texto */
+   padding: 0 40px 30px 40px; /* Adiciona preenchimento interno nos lados e inferior */
+   font-size: 20px; /* Define o tamanho da fonte como 20px */
+   font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
+}
+
+/* Estilizacao dos paragrafos dentro da sessao de apresentacao */
+#apresentacao div p {
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+   margin: 0 10px 10px 20px; /* Adiciona espacamento ao redor do paragrafo */
+}
+/* Estilizacao do botao dentro da sessao de apresentacao */
+#apresentacao div button {
+   margin: 15px; /* Define as margens do botao */
+   width: 70%; /* Define a largura do botao como 70% do container */
+   height: 50px; /* Define a altura do botao como 50px */
+   background-color: var(--cor1); /* Define a cor de fundo como branco */
+   color: var(--cor2); /* Define a cor do texto como preto */
+   font-size: 20px; /* Define o tamanho da fonte como 20px */
+   font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
+   border: 2px solid var(--cor1); /* Adiciona uma borda branca de 2px */
+   border-radius: 10px; /* Arredonda as bordas do botao */
+   cursor: pointer; /* Muda o cursor ao passar sobre o botao */
+   transition: all 1s ease; /* Adiciona uma transicao suave */
+}
+
+/* Efeito ao passar o mouse sobre o botao */
+#apresentacao div button:hover {
+   background-color: var(--cor2); /* Altera o fundo para preto */
+   color: var(--cor1); /* Altera a cor do texto para branco */
+}
+
+/* Estilizacao da sessao de servicos */
+#servicos {
+   margin-top: 30px; /* Adiciona espacamento superior de 30px */
+   margin-bottom: 30px; /* Adiciona espacamento inferior de 30px */
+   padding: 10px; /* Adiciona preenchimento de 10px */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+}
+
+/* Estilizacao do ti­tulo da sessao de servicos */
+#servicos h2 {
+   text-shadow: 3px 3px 3px var(--cor3); /* Adiciona uma sombra ao texto */
+   text-align: center; /* Centraliza o texto */
+   font-size: 60px; /* Define o tamanho da fonte como 60px */
+   font-weight: 800; /* Define o peso da fonte como 800 (negrito) */
+}
+
+/* Estilizacao do container dos cards */
+#cards {
+   margin-top: 20px; /* Adiciona espacamento superior de 20px */
+   display: flex; /* Usa Flexbox */
+   flex-direction: row; /* Organiza os elementos horizontalmente */
+   align-items: center; /* Alinha os itens verticalmente */
+   justify-content: space-around; /* Distribui os itens igualmente */
+}
+
+/* Estilizacao dos cards */
+.card {
+   width: 20%; /* Define a largura do card como 20% do container */
+   border: 2px solid var(--cor2); /* Adiciona uma borda preta de 2px */
+   border-radius: 10px; /* Arredonda as bordas do card */
+   box-shadow: 5px 5px 5px var(--cor3); /* Adiciona uma sombra ao card */
+
+   padding: 10px; /* Adiciona preenchimento interno de 10px */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   align-items: center; /* Centraliza os itens */
+   justify-content: space-between; /* Distribui os itens igualmente */
+   background-color: var(--cor2); /* Define o fundo do card como preto */
+   color: var(--cor1); /* Define a cor do texto como branco */
+   transition: all 1s ease; /* Adiciona uma transicao suave */
+}
+
+/* Efeito ao passar o mouse sobre os cards */
+.card:hover {
+   background-color: var(--cor1); /* Altera o fundo do card para branco */
+   color: var(--cor2); /* Altera a cor do texto para preto */
+   transform: translateY(-20px); /* Move o card para cima */
+}
+
+/* Estilizacao da imagem dentro do card */
+.card img {
+   width: 100%; /* Define a largura da imagem como 100% do container */
+}
+
+/* Estilizacao do ti­tulo dentro do card */
+.card h3 {
+   margin-top: 20px; /* Adiciona margem superior de 20px */
+   font-weight: 700; /* Define o peso da fonte como 700 (negrito) */
+}
+
+/* Estilizacao do paragrafo dentro do card */
+.card p {
+   margin-top: 20px; /* Adiciona margem superior de 20px */
+   font-weight: 500; /* Define o peso da fonte como 500 (seminegrito) */
+   height: 200px; /* Define a altura do paragrafo como 200px */
+}
+
+/* Estilizacao do botao dentro do card */
+.card button {
+   margin-top: 20px; /* Adiciona margem superior de 20px */
+   margin-bottom: 30px; /* Adiciona margem inferior de 30px */
+   border: 1px solid var(--cor1); /* Adiciona uma borda branca de 1px */
+   border-radius: 5px; /* Arredonda as bordas do botao */
+   background-color: var(--cor2); /* Define o fundo do botao como preto */
+   color: var(--cor1); /* Define a cor do texto como branco */
+   width: 60%; /* Define a largura do botao como 60% do container */
+   height: 50px; /* Define a altura do botao como 50px */
+   font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
+   cursor: pointer; /* Muda o cursor ao passar sobre o botao */
+}
+/* Estilizacao da sessao "Quem somos" */
+#quemsomos {
+   color: var(--cor2); /* Define a cor do texto como preto */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   padding-left: 50px; /* Adiciona preenchimento a  esquerda de 50px */
+}
+
+/* Estilizacao do tÃitulo da sessaoo "Quem somos" */
+#quemsomos h2 {
+   text-align: center; /* Centraliza o texto */
+   margin: 40px 0 40px 0; /* Adiciona margens superior e inferior de 40px */
+   font-size: 80px; /* Define o tamanho da fonte como 80px */
+   font-weight: 800; /* Define o peso da fonte como 800 (negrito) */
+   text-shadow: 2px 2px 2px var(--cor3); /* Adiciona uma sombra ao texto */
+}
+
+/* Estilizacao do container dos profissionais */
+#listadeprofissionais {
+   display: flex; /* Usa Flexbox para organizar os itens */
+   flex-direction: row; /* Organiza os itens na linha (horizontalmente) */
+   align-items: center; /* Alinha os itens verticalmente ao centro */
+   justify-content: center; /* Centraliza os itens dentro do container */
+   gap: 100px; /* Adiciona um espacamento de 100px entre os itens */
+   margin-bottom: 100px; /* Adiciona uma margem inferior de 100px */
+}
+
+/* Estilizacao dos links dentro da lista de profissionais */
+#listadeprofissionais a {
+   text-decoration: none; /* Remove o sublinhado do link */
+   color: var(--cor2); /* Define a cor do texto como preto (variavel) */
+   display: flex; /* Usa Flexbox para organizar os itens dentro do link */
+   flex-direction: column; /* Organiza os itens verticalmente dentro do link */
+   align-items: center; /* Centraliza os itens dentro do link */
+   justify-content: center; /* Alinha os itens ao centro verticalmente */
+   gap: 5px; /* Adiciona um espacamento de 5px entre os itens dentro do link */
+   cursor: pointer; /* Muda o cursor para pointer quando passa sobre o link */
+   filter: grayscale(100%); /* Deixa a imagem do link em preto e branco */
+   border-bottom: 1px solid transparent; /* Adiciona uma borda inferior transparente */
+   transition: all 1s ease; /* Adiciona uma transicao suave de 1s para todos os efeitos */
+}
+
+/* Efeito ao passar o mouse sobre os links dentro da lista de profissionais */
+#listadeprofissionais a:hover {
+   scale: 1.3; /* Aumenta o tamanho do link em 30% ao passar o mouse */
+   transform: translateY(-20px); /* Move o link 20px para cima */
+   filter: grayscale(0%); /* Remove o efeito preto e branco da imagem */
+   border-bottom: 1px solid var(--cor2); /* Adiciona uma borda inferior preta (variavel) */
+}
+
+/* Estilizacao das imagens dentro dos links de profissionais */
+#listadeprofissionais a img {
+   width: 150px; /* Define a largura da imagem como 150px */
+   border-radius: 50%; /* Torna a imagem redonda */
+   border: 2px solid var(--cor2); /* Adiciona uma borda de 2px de cor preta ao redor da imagem */
+}
+
+/* Estilizacao do texto dentro dos links de profissionais */
+#listadeprofissionais a p {
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+}
+
+/* Estilizacao dos profissionais dentro da sessao "Quem somos" */
+.profissionais {
+   display: flex; /* Usa Flexbox */
+   flex-direction: row; /* Organiza os itens horizontalmente */
+   align-items: center; /* Alinha os itens verticalmente */
+   justify-content: center; /* Centraliza os itens */
+   gap: 80px; /* Adiciona um espaÃ§o de 80px entre os itens */
+   margin-bottom: 100px; /* Adiciona margem inferior de 100px */
+}
+
+/* Estilizacao do profissional */
+.profissional {
+   position: relative; /* Essencial para posicionar filhos com position: absolute */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   width: 35%; /* Define a largura do profissional como 35% do container */
+   border-radius: 0 0 0 30px; /* Arredonda a parte inferior esquerda do profissional */
+   box-shadow: 5px 5px 5px var(--cor3); /* Adiciona uma sombra ao profissional */
+   height: 700px; /* Define a altura do profissional como 700px */
+   border: 1px solid var(--cor2); /* Adiciona uma borda preta de 1px */
+   transition: all 1s ease; /* Adiciona uma transicao suave */
+}
+
+/* Efeito ao passar o mouse sobre o profissional */
+.profissional:hover {
+   background-color: var(--cor2); /* Altera o fundo para preto */
+   color: var(--cor1); /* Altera a cor do texto para branco */
+}
+
+/* Estilizacao da imagem dentro do profissional */
+.profissional img {
+   width: 100%; /* Define a largura da imagem como 100% do container */
+   margin-bottom: 20px; /* Adiciona margem inferior de 20px */
+   filter: grayscale(100%); /* Deixa a imagem em preto e branco */
+}
+/* Efeito ao passar o mouse sobre a imagem do profissional */
+.profissional img:hover {
+   filter: grayscale(50%); /* Deixa a imagem em 50% preto e branco */
+}
+
+/* Estilizacao do texto dentro do profissional */
+.profissional-texto {
+   padding-left: 50px; /* Adiciona preenchimento a  esquerda de 50px */
+}
+
+/* Estilizacao do nome dentro do profissional */
+.profissional-texto h3 {
+   font-size: 40px; /* Define o tamanho da fonte como 40px */
+   font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
+   height: 60px; /* Define a altura do nome como 60px */
+}
+
+/* Estilizacao do cargo dentro do profissional */
+.profissional-texto h4 {
+   font-size: 30px; /* Define o tamanho da fonte como 30px */
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+   font-style: italic; /* Define o estilo da fonte como italico */
+   height: 60px; /* Define a altura do cargo como 60px */
+}
+
+/* Estilizacao da descricao dentro do profissional */
+.profissional-texto p {
+   font-size: 20px; /* Define o tamanho da fonte como 20px */
+   font-weight: 300; /* Define o peso da fonte como 300 (mais fino) */
+   height: 100px; /* Define a altura da descricao como 100px */
+   padding-right: 30px; /* Adiciona preenchimento a  direita de 30px */
+}
+
+/* Estilizacao da avaliacao do profissional */
+.avaliacao-profissional {
+   position: absolute; /* Posicionamento absoluto dentro da .profissional */
+   top: 0px; /* Distancia do topo */
+   left: 0px; /* Distancia da esquerda */
+   width: 100px; /* Largura fixa de 100px */
+   height: 100px; /* Altura fixa de 100px */
+   background-color: var(--cor1); /* Cor de fundo branca */
+   border: 3px solid var(--cor2); /* Borda preta de 3px */
+   color: var(--cor2); /* Cor do texto preta */
+   border-radius: 50%; /* Forma circular */
+   display: flex; /* Usa Flexbox */
+   flex-direction: column; /* Organiza os elementos verticalmente */
+   align-items: center; /* Centraliza os itens */
+   justify-content: center; /* Centraliza o conteudo */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+   z-index: 2; /* Garante que fique sobre a imagem */
+   transform: translateX(-50px) translateY(-50px); /* Ajuste da posicao */
+   transition: 1s all ease; /* Adiciona uma transicao suave */
+}
+
+/* Efeito ao passar o mouse sobre a avaliacao */
+.avaliacao-profissional:hover {
+   background-color: var(--cor2); /* Altera o fundo para preto */
+   color: var(--cor1); /* Altera a cor do texto para branco */
+}
+
+/* Estilizacao do texto dentro da avaliacao */
+.avaliacao-profissional-texto1 {
+   font-size: 16px; /* Define o tamanho da fonte como 16px */
+   font-weight: 400; /* Define o peso da fonte como 400 (regular) */
+}
+
+/* Estilizacao da nota dentro da avaliacao */
+.avaliacao-profissional-texto2 {
+   font-size: 36px; /* Define o tamanho da fonte como 36px */
+   font-weight: 800; /* Define o peso da fonte como 800 (negrito) */
+}
+/* Estilizacao do botao do WhatsApp */
+#whatsapp {
+   position: fixed; /* Posicionamento fixo na tela */
+   top: 75%; /* Distancia do topo */
+   left: 92%; /* Distancia da esquerda */
+   width: 100px; /* Largura do botao */
+   height: 100px; /* Altura do botao */
+   background-color: var(--cor-whatsapp); /* Cor de fundo branca */
+   border: 5px solid var(--cor1); /* Borda preta de 5px */
+   color: var(--cor1); /* Cor do texto branca */
+   border-radius: 50%; /* Forma circular */
+   display: flex; /* Usa Flexbox */
+   align-items: center; /* Centraliza os itens */
+   justify-content: center; /* Centraliza o conteudo */
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+   z-index: 2; /* Garante que fique sobre a imagem */
+   cursor: pointer; /* Muda o cursor ao passar sobre o botao */
+   transition: all 1s ease; /* Adiciona uma transicao suave */
+}
+
+#whatsapp:hover {
+   scale: 1.2; /* Aumenta o tamanho da div */
+}
+
+
+/* Estilizacao do link dentro do botao do WhatsApp */
+#whatsapp a {
+   text-decoration: none; /* Remove o sublinhado do link */
+   color: var(--cor1); /* Define a cor do texto preto */
+   font-size: 60px; /* Define o tamanho da fonte como 60px */
+}
+#contato{
+   background-color: var(--cor2); /* Define a cor de fundo usando a variavel CSS 'cor2' */
+   color: var(--cor1); /* Define a cor do texto utilizando a variavel CSS 'cor1' */
+   display: flex; /* Utiliza o modelo de layout Flexbox para organizar os elementos dentro do container */
+   flex-direction: column; /* Organiza os elementos em uma coluna */
+   align-items: center; /* Alinha os itens no centro do container ao longo do eixo transversal */
+   justify-content: space-between; /* Distribui os itens ao longo do eixo principal com espacamento igual entre eles */
+}
+
+#contato h2{
+   margin-top: 30px; /* Adiciona uma margem de 30px no topo do ti­tulo */
+   text-align: center; /* Centraliza o texto do ti­tulo */
+   font-size: 60px; /* Define o tamanho da fonte do ti­tulo */
+   font-weight: 700; /* Define o peso da fonte como negrito */
+}
+
+#contato form{
+   display: flex; /* Utiliza Flexbox para o layout do formulario */
+   flex-direction: column; /* Organiza os elementos do formulario em uma coluna */
+   width: 700px; /* Define a largura do formulario */
+   margin: auto; /* Centraliza o formulario horizontalmente */
+   padding: 10px; /* Adiciona um preenchimento interno de 10px */
+}
+
+#contato form label{
+   text-align:left; /* Alinha o texto a  esquerda */
+   font-size: 20px; /* Define o tamanho da fonte para os rotulos */
+   font-weight: 400; /* Define o peso da fonte como normal */
+}
+
+#contato form input,textarea{
+   padding: 5px; /* Adiciona um preenchimento de 5px dentro dos campos de input e textarea */
+   width: 100%; /* Define que o campo de input e textarea ocupe toda a largura disponi­vel */
+   border-radius: 5px; /* Arredonda os cantos dos campos de input e textarea */
+   font-size: 24px; /* Define o tamanho da fonte dentro dos campos */
+   font-weight: 600; /* Define o peso da fonte como semi-negrito */
+   border: 1px solid var(--cor3); /* Define a borda com 1px de espessura e cor a partir da variavel 'cor3' */
+   margin-bottom: 10px; /* Adiciona uma margem de 10px na parte inferior de cada campo */
+   transition: all 1s ease; /* Aplica uma transicao suave de 1 segundo para qualquer alteracao de propriedades */
+}
+
+#contato form input:hover,textarea:hover{
+   background-color: var(--cor3); /* Altera o fundo para 'cor3' quando o campo de input ou textarea o hover */
+   color: var(--cor1); /* Altera a cor do texto para 'cor1' durante o hover */
+}
+
+#contato form input:focus,textarea:focus{
+   background-color: var(--cor2); /* Altera o fundo para 'cor2' quando o campo de input ou textarea esta focado */
+   color: var(--cor1); /* Altera a cor do texto para 'cor1' durante o foco */
+   border: 1px solid var(--cor1); /* Altera a borda para 'cor1' durante o foco */
+   box-shadow: 3px 3px 3px var(--cor3); /* Aplica uma sombra no campo de input ou textarea com a cor 'cor3' */
+   padding-left: 10px; /* Adiciona preenchimento a  esquerda do campo de input ou textarea */
+}
+
+#contato form textarea{
+   height: 200px; /* Define a altura do campo textarea para 200px */
+}
+
+#contato form input[type="submit"]{
+   margin-top: 70px; /* Adiciona uma margem superior de 70px ao botao de envio */
+   margin-bottom: 40px; /* Adiciona uma margem inferior de 40px ao botao de envio */
+   width: 30%; /* Define a largura do botao de envio para 30% do container */
+   height: 70px; /* Define a altura do botao de envio */
+   border:1px solid var(--cor1); /* Define uma borda de 1px e a cor 'cor1' para o botao */
+   background-color: var(--cor2); /* Define a cor de fundo do botao como 'cor2' */
+   color: var(--cor1); /* Define a cor do texto no botao como 'cor1' */
+   transition: all 1s ease; /* Aplica uma transicao suave de 1 segundo para qualquer alteracao de propriedades */
+}
+
+#contato form input[type="submit"]:hover{
+   background-color: var(--cor1); /* Altera o fundo para 'cor1' durante o hover no botao */
+   color: var(--cor2); /* Altera a cor do texto para 'cor2' durante o hover no botao */
+}
+footer{
+   background-color: var(--cor1); /* Define o fundo do rodape como 'cor1' */
+   color: var(--cor2); /* Define a cor do texto no rodape como 'cor2' */
+   height: 150px; /* Define a altura do rodape para 150px */
+   display: flex; /* Utiliza Flexbox para o layout do rodape */
+   flex-direction: row; /* Organiza os itens do rodape em uma linha */
+   align-items: center; /* Alinha os itens no centro ao longo do eixo transversal */
+   justify-content: space-around; /* Distribui os itens ao longo do eixo principal com espaco ao redor */
+}
+
+#desenvolvedor{
+   display: flex; /* Utiliza Flexbox para o layout do desenvolvedor */
+   flex-direction: row; /* Organiza os itens em uma linha */
+   align-items: center; /* Alinha os itens no centro ao longo do eixo transversal */
+   gap: 10px; /* Define um espacamento de 10px entre os itens */
+}
+
+#desenvolvedor img{
+   width: 60px; /* Define a largura das imagens do desenvolvedor para 60px */
+}
+
+#desenvolvedor-identificacao p{
+   font-size: 14px; /* Define o tamanho da fonte dos paragrafos como 14px */
+   font-weight: 500; /* Define o peso da fonte como medio */
+}
+
+#desenvolvedor-identificacao h3{
+   font-size: 30px; /* Define o tamanho da fonte do ti­tulo como 30px */
+   font-weight: 700; /* Define o peso da fonte como negrito */
+}
+
+#desenvolvedor-servicos li{
+   list-style-type: none; /* Remove os marcadores da lista */
+   padding: 0; /* Remove o preenchimento da lista */
+   font-weight: 300; /* Define o peso da fonte como leve */
+}
+
+#redessociais{
+   color: var(--cor2); /* Define a cor do texto das redes sociais como 'cor2' */
+   font-size: 40px; /* Define o tamanho da fonte como 40px */
+   display: flex; /* Utiliza Flexbox para o layout das redes sociais */
+   gap: 10px; /* Define um espacamento de 10px entre os itens */
+}
+
+#redessociais a{
+   color: var(--cor2); /* Define a cor dos links das redes sociais como 'cor2' */
+   transition: all 1s ease; /* Aplica uma transicao suave de 1 segundo para qualquer alteracao de propriedades */
+}
+
+#redessociais a:hover{
+   color: var(--cor3); /* Altera a cor dos links para 'cor3' durante o hover */
+   scale: 1.2; /* Aumenta o tamanho do link para 1.2 vezes durante o hover */
+}
+
+/* ============================= */
+/*         MEDIA QUERIES        */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+
+   header {
+     flex-direction: column;
+     gap: 20px;
+   }
+ 
+   header img {
+     width: 80%;
+   }
+ 
+   #header-nav {
+     flex-direction: column;
+     gap: 20px;
+   }
+ 
+   #apresentacao {
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+   }
+ 
+   #apresentacao img {
+     width: 100%;
+   }
+ 
+   #apresentacao div {
+     width: 100%;
+     padding: 20px;
+   }
+ 
+   #cards {
+     flex-direction: column;
+     gap: 20px;
+   }
+ 
+   .card {
+     width: 90%;
+   }
+ 
+   #listadeprofissionais {
+     flex-direction: column;
+     gap: 30px;
+   }
+ 
+   .profissionais {
+     flex-direction: column;
+     gap: 30px;
+   }
+ 
+   .profissional {
+     width: 90%;
+     height: auto;
+   }
+ 
+   #contato form {
+     width: 90%;
+   }
+ 
+   #whatsapp {
+     width: 60px;
+     height: 60px;
+     left: 80%;
+     top: 85%;
+   }
+ 
+   #whatsapp a {
+     font-size: 30px;
+   }
+ 
+   footer {
+     flex-direction: column;
+     height: auto;
+     padding: 20px;
+     gap: 20px;
+     text-align: center;
+   }
+ 
  }
 
-  /* Efeito ao passar o mouse sobre os links de navegação */
-  .header-nav-a:hover {
-    scale: 1.2; /* Aumenta o tamanho do elemento em 20% ao passar o mouse */
- }
- /* Estilização dos ícones da navegação */
- .header-nav-a i {
-    font-size: 40px; /* Define o tamanho dos ícones como 40px */
- }
- /* Estilização do texto dos links de navegação */
- .header-nav-a span {
-    font-size: 24px; /* Define o tamanho da fonte como 24px */
- }
- /* Estilização da seção de apresentação */
- #apresentacao {
-    display: flex; /* Usa Flexbox */
-    flex-direction: row; /* Organiza os elementos horizontalmente */
-    align-items: start; /* Alinha os elementos ao topo */
-    justify-content: space-between; /* Distribui os itens uniformemente */
-    margin-top: 60px; /* Adiciona um espaçamento superior de 60px */
-    margin-left: 30px; /* Adiciona um espaçamento à esquerda de 30px */
-    margin-right: 30px; /* Adiciona um espaçamento à direita de 30px */
-    background-color: var(--cor2); /* Define o fundo da seção como preto */
-    color: var(--cor1); /* Define a cor do texto como branco */
- }
- /* Estilização da imagem dentro da seção de apresentação */
- #apresentacao img {
-    width: 75%; /* Define a largura da imagem como 75% do container */
-    filter: grayscale(100%); /* Deixa a imagem em preto e branco */
-    transition: all 1s ease; /* Adiciona uma transição suave de 1s */
- }
-
-  /* Efeito ao passar o mouse sobre a imagem */
-  #apresentacao img:hover {
-    filter: grayscale(0%); /* Remove o efeito preto e branco */
- }
- /* Estilização do container de texto dentro da seção de apresentação */
- #apresentacao div {
-    width: 25%; /* Define a largura do bloco de texto como 25% do container */
- }
- /* Estilização do título dentro da seção de apresentação */
- #apresentacao div h2 {
-    font-family: "Orbitron", sans-serif; /* Usa a fonte "Orbitron" */
-    font-optical-sizing: auto; /* Ajusta automaticamente o tamanho ótico da fonte */
-    font-weight: 400; /* Define o peso da fonte como 400 (regular) */
-    font-style: normal; /* Define o estilo da fonte como normal */
-    font-size: 50px; /* Define o tamanho da fonte como 50px */
-    width: 100%; /* Define a largura como total */
-    text-align: center; /* Centraliza o texto */
-    margin: 10px 0 20px 0; /* Adiciona espaçamento superior e inferior */
- }
- /* Estilização do subtítulo dentro da seção de apresentação */
- #apresentacao div h3 {
-    width: 100%; /* Define a largura como total */
-    text-align: center; /* Centraliza o texto */
-    padding: 0 40px 30px 40px; /* Adiciona preenchimento interno nos lados e inferior */
-    font-size: 20px; /* Define o tamanho da fonte como 20px */
-    font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
- }
- /* Estilização dos parágrafos dentro da seção de apresentação */
- #apresentacao div p {
-    margin: 0 20px 20px 20px; /* Adiciona espaçamento ao redor do parágrafo */
- }
-
-  /* Estilização do botão dentro da seção de apresentação */
-  #apresentacao div button {
-    margin: 10px 40px 0 40px; /* Define as margens do botão */
-    width: 200px; /* Define a largura do botão como 200px */
-    height: 50px; /* Define a altura do botão como 50px */
-    background-color: var(--cor1); /* Define a cor de fundo como branco */
-    color: var(--cor2); /* Define a cor do texto como preto */
-    font-size: 20px; /* Define o tamanho da fonte como 20px */
-    font-weight: 600; /* Define o peso da fonte como 600 (seminegrito) */
-    border: 2px solid var(--cor1); /* Adiciona uma borda branca de 2px */
-    border-radius: 10px; /* Arredonda as bordas do botão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    transition: all 1s ease; /* Adiciona uma transição suave */
- }
- /* Efeito ao passar o mouse sobre o botão */
- #apresentacao div button:hover {
-    background-color: var(--cor2); /* Altera o fundo para preto */
-    color: var(--cor1); /* Altera a cor do texto para branco */
- }
+ 
